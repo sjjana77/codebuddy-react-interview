@@ -1,13 +1,15 @@
 import { Outlet } from "react-router-dom";
 
-const Root = () => {
-  return (
-    <div className="min-h-[100dvh] bg-gradient-to-tr from-[#FBAB7E] to-[#F7CE68] py-7 text-black">
-      <div className="container mx-auto">
-        <Outlet />
-      </div>
-    </div>
-  );
-};
+const Root = () => (
+  <div>
+    <header className="bg-blue-600 p-4 text-white">
+      <h1 className="text-2xl font-bold">Multi-Step Form Application</h1>
+    </header>
+    <main className="p-4">
+      <Outlet />
+    </main>
+  </div>
+);
 
 export default Root;
+
